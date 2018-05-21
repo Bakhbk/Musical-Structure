@@ -32,22 +32,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        // Find the View that shows the AudiobooksActivity category
-        TextView audiobooks = findViewById(R.id.audio_books);
-
-        // Set a clickListener on that View
-        audiobooks.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link AudiobooksActivity}
-                Intent audiobooksIntent = new Intent(MainActivity.this, AudiobooksActivity.class);
-
-                // Start the new activity
-                startActivity(audiobooksIntent);
-            }
-        });
-
 
     }
 }
