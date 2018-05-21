@@ -14,6 +14,7 @@ public class AudiobooksActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_audiobooks);
 
+        // Create ArrayList for songs
         ArrayList<String> audioBooks = new ArrayList<>();
         audioBooks.add("This Book Will Change Everything! :)");
         audioBooks.add("This Book Will Change Everything! :)");
@@ -33,8 +34,6 @@ public class AudiobooksActivity extends AppCompatActivity {
         audioBooks.add("This Book Will Change Everything! :)");
         audioBooks.add("This Book Will Change Everything! :)");
         audioBooks.add("This Book Will Change Everything! :)");
-
-
 
         // Find the root view of the whole layout
         LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);

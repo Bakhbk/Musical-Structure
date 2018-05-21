@@ -16,7 +16,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
      * The context is used to inflate the layout file, and the list is the data we want
      * to populate into the lists.
      *
-     * @param context        The current context. Used to inflate the layout file.
+     * @param context      The current context. Used to inflate the layout file.
      * @param androidWords A List of WordAdapter objects to display in a list
      */
     public WordAdapter(Activity context, ArrayList<Word> androidWords) {
@@ -30,10 +30,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
     /**
      * Provides a view for an AdapterView (ListView, GridView, etc.)
      *
-     * @param position The position in the list of data that should be displayed in the
-     *                 list item view.
+     * @param position    The position in the list of data that should be displayed in the
+     *                    list item view.
      * @param convertView The recycled view to populate.
-     * @param parent The parent ViewGroup that is used for inflation.
+     * @param parent      The parent ViewGroup that is used for inflation.
      * @return The View for the position in the AdapterView.
      */
     @Override
