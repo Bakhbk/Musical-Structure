@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        <TextView
+            android:id="@+id/songs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#90CAF9"
+            android:drawableLeft="@drawable/songs"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/name_songs_activity"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            android:drawableStart="@drawable/songs" />
+
+        <TextView
+            android:id="@+id/audio_books"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BBDEFB"
+            android:drawableLeft="@drawable/audio_books"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/audio_books"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            android:drawableStart="@drawable/audio_books" />
 
 </LinearLayout>

@@ -16,8 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SongsActivity" />
-        <activity android:name=".PlaybackActivity"></activity>
+        <activity
+            android:name=".SongsActivity"
+            android:label="@string/name_songs_activity" />
+        <activity
+            android:name=".AudiobooksActivity"
+            android:label="@string/audio_books"></activity>
     </application>
 
 </manifest>
