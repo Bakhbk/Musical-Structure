@@ -3,33 +3,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F1F8E9"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/songs"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#90CAF9"
-        android:drawableLeft="@drawable/songs"
-        android:drawablePadding="8dp"
-        android:drawableStart="@drawable/songs"
-        android:gravity="center_vertical"
-        android:text="@string/name_songs_activity"
-        android:textSize="22sp"
-        android:textStyle="bold|italic" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/audio_books"
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:src="@drawable/ic_songs" />
+
+
+        <TextView
+            android:id="@+id/songs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C5E1A5"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/name_songs_activity"
+            android:textSize="@dimen/text_size_22sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#BBDEFB"
-        android:drawableLeft="@drawable/audio_books"
-        android:drawablePadding="8dp"
-        android:drawableStart="@drawable/audio_books"
-        android:gravity="center_vertical"
-        android:text="@string/audio_books"
-        android:textSize="22sp"
-        android:textStyle="bold|italic" />
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:src="@drawable/ic_microphone" />
+
+
+        <TextView
+            android:id="@+id/my_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DCEDC8"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/my_playlist"
+            android:textSize="@dimen/text_size_22sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
 
 </LinearLayout>

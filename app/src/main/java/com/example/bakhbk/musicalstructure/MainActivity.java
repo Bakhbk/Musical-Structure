@@ -32,6 +32,22 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        // Find the View that shows the MyPlaylist category
+        TextView myPlaylist = findViewById(R.id.my_playlist);
+
+        // Set a clickListener on that View
+        myPlaylist.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link MyPlaylistActivity}
+                Intent myPlaylistIntent = new Intent(MainActivity.this, MyPlaylistActivity.class);
+
+                // Start the new activity
+                startActivity(myPlaylistIntent);
+            }
+        });
+
 
     }
 }

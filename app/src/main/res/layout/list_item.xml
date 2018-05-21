@@ -11,12 +11,16 @@
         android:id="@+id/artists_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
         tools:text="songs name" />
 
     <TextView
         android:id="@+id/songs_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:textStyle="italic"
         tools:text="artists name" />
 
 </LinearLayout>

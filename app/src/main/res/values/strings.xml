@@ -3,4 +3,6 @@
     <string name="name_songs_activity">Songs</string>
     <string name="playback_activity_name">Playback</string>
     <string name="audio_books">Audio books</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="my_playlist">My playlist</string>
 </resources>

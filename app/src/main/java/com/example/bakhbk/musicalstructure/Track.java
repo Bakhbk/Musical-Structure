@@ -1,6 +1,6 @@
 package com.example.bakhbk.musicalstructure;
 
-public class Word {
+public class Track {
 
     // Songs name for the word
     private String mSongsName;
@@ -8,7 +8,7 @@ public class Word {
     // Artists name for the word
     private String mArtistsName;
 
-    public Word(String songsName, String artistsName) {
+    public Track(String songsName, String artistsName) {
         mSongsName = songsName;
         mArtistsName = artistsName;
     }
