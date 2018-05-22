@@ -13,16 +13,16 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="62dp"
-            android:layout_height="62dp"
-            android:background="#C5E1A5"
+            android:layout_width="@dimen/layout_width_62dp"
+            android:layout_height="@dimen/layout_height_62dp"
+            android:background="@color/background_color_1"
             android:src="@android:drawable/ic_media_play" />
 
         <TextView
             android:id="@+id/now_playing"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#DCEDC8"
+            android:background="@color/background_color_2"
             android:gravity="center_vertical"
             android:paddingLeft="@dimen/padding_16dp"
             android:text="@string/now_playing"
@@ -37,15 +37,16 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="62dp"
-            android:layout_height="62dp"
+            android:layout_width="@dimen/layout_width_62dp"
+            android:layout_height="@dimen/layout_height_62dp"
+            android:background="@color/background_color_2"
             android:src="@drawable/ic_songs" />
 
         <TextView
             android:id="@+id/songs"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#C5E1A5"
+            android:background="@color/background_color_1"
             android:gravity="center_vertical"
             android:paddingLeft="@dimen/padding_16dp"
             android:text="@string/name_songs_activity"
@@ -60,15 +61,16 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="62dp"
-            android:layout_height="62dp"
+            android:layout_width="@dimen/layout_width_62dp"
+            android:layout_height="@dimen/layout_height_62dp"
+            android:background="@color/background_color_1"
             android:src="@drawable/my_playlist" />
 
         <TextView
             android:id="@+id/my_playlist"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#DCEDC8"
+            android:background="@color/background_color_2"
             android:gravity="center_vertical"
             android:paddingLeft="@dimen/padding_16dp"
             android:text="@string/my_playlist"

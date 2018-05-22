@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class WordAdapter extends ArrayAdapter<Track> {
+public class TrackAdapter extends ArrayAdapter<Track> {
 
     /**
      * This is our own custom constructor (it doesn't mirror a superclass constructor).
@@ -17,9 +17,9 @@ public class WordAdapter extends ArrayAdapter<Track> {
      * to populate into the lists.
      *
      * @param context      The current context. Used to inflate the layout file.
-     * @param androidTrack A List of WordAdapter objects to display in a list
+     * @param androidTrack A List of TrackAdapter objects to display in a list
      */
-    public WordAdapter(Activity context, ArrayList<Track> androidTracks) {
+    public TrackAdapter(Activity context, ArrayList<Track> androidTracks) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not

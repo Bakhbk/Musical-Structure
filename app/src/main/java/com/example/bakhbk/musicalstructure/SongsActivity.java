@@ -18,29 +18,29 @@ public class SongsActivity extends AppCompatActivity {
 
         // Create ArrayList for songs
         final ArrayList<Track> songs = new ArrayList<>();
-        songs.add(new Track("One Kiss", "Calvin Harris & Dua Lipa"));
-        songs.add(new Track("Leave A Light On", "Tom Walker"));
-        songs.add(new Track("Say Something", "Justin Timberlake feat. Chris Stapleton"));
-        songs.add(new Track("Whatever It Takes", "Imagine Dragons"));
-        songs.add(new Track("Chun-Li", "Nicki Minaj"));
-        songs.add(new Track("One Kiss", "Calvin Harris & Dua Lipa"));
-        songs.add(new Track("Leave A Light On", "Tom Walker"));
-        songs.add(new Track("Say Something", "Justin Timberlake feat. Chris Stapleton"));
-        songs.add(new Track("Whatever It Takes", "Imagine Dragons"));
-        songs.add(new Track("Chun-Li", "Nicki Minaj"));
-        songs.add(new Track("One Kiss", "Calvin Harris & Dua Lipa"));
-        songs.add(new Track("Leave A Light On", "Tom Walker"));
-        songs.add(new Track("Say Something", "Justin Timberlake feat. Chris Stapleton"));
-        songs.add(new Track("Whatever It Takes", "Imagine Dragons"));
-        songs.add(new Track("Chun-Li", "Nicki Minaj"));
-        songs.add(new Track("One Kiss", "Calvin Harris & Dua Lipa"));
-        songs.add(new Track("Leave A Light On", "Tom Walker"));
-        songs.add(new Track("Say Something", "Justin Timberlake feat. Chris Stapleton"));
-        songs.add(new Track("Whatever It Takes", "Imagine Dragons"));
-        songs.add(new Track("Chun-Li", "Nicki Minaj"));
+        songs.add(new Track(getString(R.string.one_kiss), getString(R.string.calvin_harris_dua_lipa_one_kiss)));
+        songs.add(new Track(getString(R.string.leave_a_light_on), getString(R.string.tom_walker_leave_a_light_on)));
+        songs.add(new Track(getString(R.string.say_something), getString(R.string.say_something_justin_timb)));
+        songs.add(new Track(getString(R.string.whatever_it_takes), getString(R.string.imagine_dragons_whatever_it_takes)));
+        songs.add(new Track(getString(R.string.chun_li), getString(R.string.nicki_minaj_chun_li)));
+        songs.add(new Track(getString(R.string.one_kiss), getString(R.string.calvin_harris_dua_lipa_one_kiss)));
+        songs.add(new Track(getString(R.string.leave_a_light_on), getString(R.string.tom_walker_leave_a_light_on)));
+        songs.add(new Track(getString(R.string.say_something), getString(R.string.say_something_justin_timb)));
+        songs.add(new Track(getString(R.string.whatever_it_takes), getString(R.string.imagine_dragons_whatever_it_takes)));
+        songs.add(new Track(getString(R.string.chun_li), getString(R.string.nicki_minaj_chun_li)));
+        songs.add(new Track(getString(R.string.one_kiss), getString(R.string.calvin_harris_dua_lipa_one_kiss)));
+        songs.add(new Track(getString(R.string.leave_a_light_on), getString(R.string.tom_walker_leave_a_light_on)));
+        songs.add(new Track(getString(R.string.say_something), getString(R.string.say_something_justin_timb)));
+        songs.add(new Track(getString(R.string.whatever_it_takes), getString(R.string.imagine_dragons_whatever_it_takes)));
+        songs.add(new Track(getString(R.string.chun_li), getString(R.string.nicki_minaj_chun_li)));
+        songs.add(new Track(getString(R.string.one_kiss), getString(R.string.calvin_harris_dua_lipa_one_kiss)));
+        songs.add(new Track(getString(R.string.leave_a_light_on), getString(R.string.tom_walker_leave_a_light_on)));
+        songs.add(new Track(getString(R.string.say_something), getString(R.string.say_something_justin_timb)));
+        songs.add(new Track(getString(R.string.whatever_it_takes), getString(R.string.imagine_dragons_whatever_it_takes)));
+        songs.add(new Track(getString(R.string.chun_li), getString(R.string.nicki_minaj_chun_li)));
 
         //Create an {@link ArrayAdapter}, whose data source is a list of Strings.
-        WordAdapter adapter = new WordAdapter(this, songs);
+        TrackAdapter adapter = new TrackAdapter(this, songs);
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         final ListView listView = findViewById(R.id.list);
         // Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the

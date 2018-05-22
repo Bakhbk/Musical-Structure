@@ -18,18 +18,18 @@ public class MyPlaylistActivity extends AppCompatActivity {
 
         // Create ArrayList for songs
         final ArrayList<Track> songs = new ArrayList<>();
-        songs.add(new Track("River", "Eminem feat. Ed Sheeran"));
-        songs.add(new Track("La Calin", "Serhat Durmus"));
-        songs.add(new Track("Capital Letters", "Hailee Steinfeld & BloodPop"));
-        songs.add(new Track("Believer", "Imagine Dragons"));
-        songs.add(new Track("Bella", "Wolfine"));
-        songs.add(new Track("Walk It Talk It", "Walk It Talk It"));
-        songs.add(new Track("Delicate", "Taylor Swift"));
-        songs.add(new Track("Anywhere", "Rita Ora"));
-        songs.add(new Track("Sit Next To Me", "Foster The People"));
+        songs.add(new Track(getString(R.string.river), getString(R.string.eminem_river)));
+        songs.add(new Track(getString(R.string.la_calin), getString(R.string.serhat_durmus_la_calin)));
+        songs.add(new Track(getString(R.string.capital_letters), getString(R.string.hailee_steinfeld_capital_letters)));
+        songs.add(new Track(getString(R.string.believer), getString(R.string.imagine_dragons_believer)));
+        songs.add(new Track(getString(R.string.bella), getString(R.string.wolfine_bella)));
+        songs.add(new Track(getString(R.string.walk_it_talk_it), getString(R.string.migos_walk_it_talk_it)));
+        songs.add(new Track(getString(R.string.delicate), getString(R.string.taylor_swift_delicate)));
+        songs.add(new Track(getString(R.string.anywhere), getString(R.string.rita_ora_anywhere)));
+        songs.add(new Track(getString(R.string.sit_next_to_me), getString(R.string.foster_the_people_sit_next_to_me)));
 
         //Create an {@link ArrayAdapter}, whose data source is a list of Strings.
-        WordAdapter adapter = new WordAdapter(this, songs);
+        TrackAdapter adapter = new TrackAdapter(this, songs);
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         final ListView listView = findViewById(R.id.list);
         // Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the

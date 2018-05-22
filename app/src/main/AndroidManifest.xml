@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.bakhbk.musicalstructure">
 
     <application
@@ -19,16 +20,23 @@
         <activity
             android:name=".SongsActivity"
             android:label="@string/name_songs_activity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
         <activity
             android:name=".NowPlayingActivity"
             android:label="@string/now_playing"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
 
         <activity
             android:name=".MyPlaylistActivity"
             android:label="@string/my_playlist"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean">
+
+
+
+        </activity>
     </application>
 
 </manifest>
