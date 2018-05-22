@@ -15,8 +15,31 @@
         <ImageView
             android:layout_width="62dp"
             android:layout_height="62dp"
-            android:src="@drawable/ic_songs" />
+            android:background="#C5E1A5"
+            android:src="@android:drawable/ic_media_play" />
 
+        <TextView
+            android:id="@+id/now_playing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DCEDC8"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/now_playing"
+            android:textSize="@dimen/text_size_22sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:src="@drawable/ic_songs" />
 
         <TextView
             android:id="@+id/songs"
@@ -39,8 +62,7 @@
         <ImageView
             android:layout_width="62dp"
             android:layout_height="62dp"
-            android:src="@drawable/ic_microphone" />
-
+            android:src="@drawable/my_playlist" />
 
         <TextView
             android:id="@+id/my_playlist"
@@ -54,5 +76,4 @@
             android:textStyle="bold|italic" />
 
     </LinearLayout>
-
 </LinearLayout>

@@ -15,6 +15,22 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
+        // Find the View that shows the MyPlaylist category
+        TextView nowPlaying = findViewById(R.id.now_playing);
+
+        // Set a clickListener on that View
+        nowPlaying.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link MyPlaylistActivity}
+                Intent nowPlaying = new Intent(MainActivity.this, NowPlayingActivity.class);
+
+                // Start the new activity
+                startActivity(nowPlaying);
+            }
+        });
+
         // Find the View that shows the Songs category
         TextView songs = findViewById(R.id.songs);
 
